@@ -15,6 +15,7 @@ Tdam <- function(dam,T50par,z,mins=60) {
   T50par - z * log10(mins*50/dam)
 }
 
+### THIS FUNCTION DREW
 # damage caused by sitting at temperature Tleaf for mins minutes
 damT <- function(Tleaf,T50par,z,mins=60) {
   dam <- 50*mins*10^(-1/z*(T50par - Tleaf))
